@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <title> Event Project </title>
+      <link href="eventstyle.css" rel="stylesheet">
+        <script src="jscript.js"></script>
+        <script src=
+        "https://maps.googleapis.com/maps/api/js?key=<AIzaSyDaGmWKa4JsXZ-HjGw7ISLn_3namBGewQe>&callback=initMap&libraries=&v=weekly"
+            async>
+          </script>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<style>
+   
+
+</style>
+<body>
+    
+  <div class="heading">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="resource.html">Resource</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <a href="login.html" class="btn">Sign In/Up</a>
+    </nav>
+ </div>
+
+
+    
+    <div class= "about">  
+      <h2>  Contact Us </h2> 
+      <hr>   
+      <div class="contact">
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="add">Address</label>
+          <input type="text" id="add" name="add" placeholder="Your address..">
+
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Your email..">
+
+          <label for="phone">phone No</label>
+          <input type="text" id="phone" name="phone" placeholder="Your lPhone..">
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Talk to us.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+        <div class="calender">
+            <h2> Calender</h2>
+            <hr>
+            <table>
+                <tr>
+                  <th style="width:50%;">Date</th>
+                  <th style="width:50%">Speaker</th>
+                  <th style="width:50%">Location</th>
+                </tr>
+                <tr style="height:70px">
+                  <td >25th July, 2017</td>
+                  <td>Maria Anders</td>
+                  <td>Germany</td>
+                </tr>
+                <tr>
+                  <td>19th April, 2022</td>
+                  <td>Francisco Chang</td>
+                  <td>Mexico</td>
+                </tr>
+              </table>
+        </div>
+        
+          <style type="text/css">
+        
+            /* Set the size of the div element
+            that contains the map */
+            
+            
+            
+          </style>
+       
+          <h2>
+            Maps
+          </h2>
+        
+          <hr>
+          <div id="map"></div>
+        
+          
+          <script>
+        
+            // Initialize and add the map
+            function initMap() {
+        
+              // The location of Geeksforgeeks office
+              const gfg_office = {
+                lat: 28.50231,
+                lng: 77.40548
+              };
+        
+              // Create the map, centered at gfg_office
+              const map = new google.maps.Map(
+                  document.getElementById("map"), {
+        
+                // Set the zoom of the map
+                zoom: 17.56,
+                center: gfg_office,
+              });
+            }
+          </script>
+        
+        
+        
+      </div>
+            
+   
+</div>
+<footer>
+  <h2 style="padding: 20px;"> Quick Links</h2>
+  <hr >
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="service.html">Service</a></li>
+          <li><a href="resource.html">Resource</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+    
+      </footer>
+</body>
+</html>
